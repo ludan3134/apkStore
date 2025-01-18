@@ -1,0 +1,26 @@
+Debug = true
+RunMode = "test" #测试环境 test  生产环境 production
+QaMode = false
+Name = "a3-grpc-service"
+NodeId = "1001"
+GrpcServicePort = ":3000"
+DefaultDistributor = "986550334888867"
+DefaultModel = "986550472629156"
+
+[PostgresConfig]
+ApplicationName = "a3-grpc-service"
+Database = "rdb"
+User = "postgres"
+Password = "postgresqlPWD"
+Host = "47.120.68.50"
+PoolConnections = "4"
+LogLevel = 5
+Port = 6008
+Debug = true
+
+[RedisConfig]
+Addr = "47.120.68.50:6059"
+Password = "redisPWD"
+DB = 12
+TTL = "25h0m0s"
+

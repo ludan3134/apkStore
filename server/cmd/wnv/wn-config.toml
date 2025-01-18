@@ -1,0 +1,23 @@
+Name = "edge-node-http-server-with-grpc-client-inside"
+Debug = true
+RunMode = "test" #测试环境 test  生产环境 production
+AuthMode = true
+NodeId = "1001"
+HttpServerPort = ":8061"
+GrpcServiceAddress = "http://127.0.0.1:3000"
+A3AuthNodeURL = "http://47.76.127.2:8051/v"
+TvA3AuthNodeURL = "http://47.76.127.2:8052/v"
+StoragePath = "/home/upload"
+AnotherStoragePath = "/home/rsync/home/upload"
+FileName = "importAppUser"
+FileDir = "/home/upload/excel"
+[PostgresConfig]
+ApplicationName = "a3-grpc-service"
+Database = "rdb"
+User = "postgres"
+Password = "postgresqlPWD"
+Host = "47.120.68.50"
+PoolConnections = "4"
+LogLevel = 5
+Port = 6008
+Debug = true

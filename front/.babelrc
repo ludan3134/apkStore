@@ -1,0 +1,30 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react",
+    [
+      "@babel/preset-typescript",
+      {
+        "isTSX": true,
+        "allowNamespaces": true,
+        "allExtensions": true
+      }
+    ],
+    "@griffel"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "cores": "EsNext"
+      }
+    ],
+    [
+      "react-hot-loader/babel"
+    ],
+    [
+      "@babel/plugin-transform-react-jsx"
+    ],
+    "babel-plugin-annotate-pure-calls"
+  ]
+}
